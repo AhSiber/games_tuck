@@ -3,6 +3,7 @@
 # beast Game for python3.8.10 utf-8
  
 import random
+import sys
 from colorama import Fore , Style
 from os import system
 import numpy
@@ -34,6 +35,7 @@ def main_vers():
 {Fore.CYAN}6 - {Fore.RED}➟ {Fore.GREEN}Muangin!                  {Fore.BLUE}&{Fore.CYAN} mingin the number
 {Fore.CYAN}7 - {Fore.RED}➟ {Fore.GREEN}Duplicate                 {Fore.BLUE}&{Fore.CYAN} Find the number of duplicate numbers
 {Fore.CYAN}8 - {Fore.RED}➟ {Fore.GREEN}power 2                   {Fore.BLUE}&{Fore.CYAN} pwo two number !
+{Fore.CYAN}9 - {Fore.RED}➟ {Fore.GREEN} / two                    {Fore.BLUE}&{Fore.CYAN} number / two!
 
 {Fore.CYAN}99 - {Fore.RED}➟ {Fore.GREEN}Creator!                 {Fore.BLUE}&{Fore.CYAN} Creator Games Tuch
 """)
@@ -292,3 +294,28 @@ elif main == 8:
       powers()
    except: 
       print(f"{Fore.RED}Error")
+
+elif main == 9: 
+   def two_number(): 
+      umber = random.randrange(10,1002)
+      print(f"{Fore.GREEN} {umber} / 2") 
+      input_me = float(input(f'{Fore.WHITE} Enter number : '))
+      if input_me == umber / 2: 
+         print(f"{Fore.GREEN}well!") 
+         cheack_out = str(input('[+] Do you want to play again [y:n] : '))
+         if cheack_out == 'y'.lower(): 
+            system('clear') 
+            two_number() 
+         else:
+            pass
+
+      else: 
+         print(f"{Fore.RED}oh..sorry!") 
+         cheack_out_lossed = str(input('[+] Do you want to play again [y:n] : '))
+         if cheack_out_lossed == 'y'.lower(): 
+            system('clear')
+            two_number()  
+         else: 
+            pass 
+   
+   two_number() 
