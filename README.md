@@ -1,9 +1,4 @@
-<h2><blockquote>Games Tuck...</blockquote></h2>
-
-<video> 
-   <source src="video_.mkv" type="video/mkv">
-<video>
-
+<h2><blockquote>Games Tuck...</blockquote></h2> 
 <br>
 <h1> About The Game</h1> 
 <blockquote>
