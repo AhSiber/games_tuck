@@ -3,8 +3,7 @@
 # beast Game for python3.8.10 utf-8
  
 import random
-import sys
-from colorama import Fore , Style
+from colorama import Fore
 from os import system
 import numpy
 from requests import get , ConnectionError
@@ -51,13 +50,14 @@ except:
 
 if main == 1: 
    def tuch():
+
       print(f"{Fore.RED}The game has started (: Let's play")
       # animal list to python --> cheack list txt for input anmials 
       anmials = str(input(f'{Fore.GREEN}[+] Write the name of an animal : ')) 
       # Check the list to find the name of the desired animal
 
-      with open("animal.txt" , mode='r') as file: 
-         cheack_read = file.read() 
+      with open("anm.txt",mode='r') as file: 
+         cheack_read = file.read()
 
          if anmials in cheack_read:
             print(f"{Fore.GREEN}Well done you said (:")
